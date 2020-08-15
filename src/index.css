@@ -121,6 +121,11 @@ li {
   font-size: 27px;
   color: #697784;
 }
+
+.tweet-icon-like {
+  padding-top: 3px;
+}
+
 .tweet-icon:hover {
   color: #00b5d6;
   cursor: pointer;

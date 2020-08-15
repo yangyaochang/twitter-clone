@@ -5,6 +5,7 @@ export function formatDate (timestamp) {
 }
 
 export function formatTweet (tweet, author, authedUser, parentTweet) {
+  
   const { id, likes, replies, text, timestamp } = tweet
   const { name, avatarURL } = author
 
