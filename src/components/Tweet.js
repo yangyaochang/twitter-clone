@@ -53,14 +53,17 @@ class Tweet extends Component {
                     </div>
 
                     <div className='tweet-icons'>
-                        <TiArrowBackOutline className='tweet-icon' />
-                        <span>{replies !== 0 && replies}</span>
+                        <button className='reply-button'>
+                            <TiArrowBackOutline className='tweet-icon' />
+                            <span className='button-num'>{replies !== 0 && replies}</span>
+                        </button>
+                        
                         <button className='heart-button' onClick={this.handleLike}>
                             {hasLiked === true
-                            ? <TiHeartFullOutline color='#e0245e' className='tweet-icon tweet-icon-like' />
-                            : <TiHeartOutline className='tweet-icon tweet-icon-like'/>}
+                            ? <TiHeartFullOutline color='#e0245e' className='tweet-icon' />
+                            : <TiHeartOutline className='tweet-icon'/>}
+                            <span className='button-num'>{ (likes !== 0) ? likes : null}</span>
                         </button>
-                        <span>{ (likes !== 0) ? likes : null}</span>
                     </div>
                 </div>
             </Link>

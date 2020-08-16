@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   color: #252525;
+  background-color: #f8f8f8;
 }
 
 a {
@@ -80,9 +81,10 @@ li {
   padding: 10px;
   display: flex;
   margin: 0 auto;
-  border: 1px solid #dad7d7;
-  border-radius: 3px;
+  background-color: white;
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
 }
 
 .tweet-info {
@@ -112,24 +114,22 @@ li {
   display: flex;
   align-items: center;
 }
-.tweet-icons > span {
+.button-num {
+  margin-left: 5px;
   color: #969696;
-  margin: 0 15px 0 5px;
-  font-size: 18px !important;
+  font-size: 12px !important;
 }
 .tweet-icon {
-  font-size: 27px;
+  padding-left: 3px;
+  font-size: 16px;
   color: #697784;
-}
-
-.tweet-icon-like {
-  padding-top: 3px;
 }
 
 .tweet-icon:hover {
   color: #00b5d6;
   cursor: pointer;
 }
+
 .replying-to {
   border: none;
   background: transparent;
@@ -140,8 +140,26 @@ li {
 }
 
 .heart-button {
+  margin-left: 15px;
   background: transparent;
   border: none;
+  border: 1px solid #d6dae0;
+  border-radius: 100px;
+  padding: .5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reply-button {
+  background: transparent;
+  border: none;
+  border: 1px solid #d6dae0;
+  border-radius: 100px;
+  padding: .5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .new-tweet {
